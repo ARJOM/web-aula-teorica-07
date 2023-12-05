@@ -5,4 +5,9 @@
 
 {% block content %}
     <h2>Seja Bem-Vindo</h2>
+    {% if user.is_staff %}
+        ADM
+    {% else %}
+        Fulano
+    {% endif %}
 {% endblock %}
